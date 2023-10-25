@@ -115,26 +115,36 @@
     <h2>Contact Form</h2>
     <div>
       <form action="/index.html">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
+         <label>
+         <span>Name</span>
+         <input type="text" placeholder="Your name..">
+         </label>
+
+         <label>
+            <span>E-mail</span>
+            <input type="text" placeholder="Your e-mail..">
+         </label>
+
+         <label>
+            <span>Phone Number</span>
+            <input type="tel" placeholder="Your phone number..">
+         </label>
     
-        <label for="email">E-mail</label>
-        <input type="text" id="email" name="email" placeholder="Your e-mail..">
-        
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+         <label>
+            <span>Subject</span>
+            <select>
+            <option value="project-inq">Project Inquiry</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="other">Other</option>
+            </select>
+         </label>
     
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject">
-          <option value="project-inq">Project Inquiry</option>
-          <option value="collaboration">Collaboration</option>
-          <option value="other">Other</option>
-        </select>
+         <label>
+            <span>Message</span>
+            <textarea placeholder="Write something.." style="height:200px"></textarea>
+         </label>
     
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+         <input type="submit" value="Submit"> <input type="reset" value="Reset">
       </form>
     </div>
  </section>
